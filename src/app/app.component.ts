@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'oneConversion';
+  title = 'myProject';
+
+  readMe() {
+    console.log('button clicked');
+  }
+  showMsg =true;
+  colorName='green';
+  switchValue=6;
+  users =[
+    {id :10, name :'john'},
+    {id :20, name:'james'},
+    {id :30, name:'jack'},
+    {id :40, name:'jerri'}
+  ]
+ 
 }
