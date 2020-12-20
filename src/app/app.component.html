@@ -17,7 +17,7 @@
 
 <h4>ngswitch</h4>
 <div [ngSwitch]="switchValue">
-    <div *ngSwitchCase="1">value passed:1</div>
+    <div *ngSwitchCase="1">value passed:1</div> 
     <div *ngSwitchCase="2">value passed:2</div>
     <div *ngSwitchCase="3">value passed:3</div>
     <div *ngSwitchDefault>this is a default value </div>
@@ -44,6 +44,9 @@
         <td>{{o}}</td>
     </tr>
 </table>
+<!--ng style -->
+<a [ngStyle]="{'color':'red'}" href="#">ng style </a>
+<div [ngStyle]="{'color':colorVal, 'background-color':'#ddd'}">ng style </div>
 
 
 <router-outlet></router-outlet>

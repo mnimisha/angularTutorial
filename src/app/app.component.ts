@@ -20,5 +20,6 @@ export class AppComponent {
     {id :30, name:'jack'},
     {id :40, name:'jerri'}
   ]
+  colorVal='blue';
  
 }
