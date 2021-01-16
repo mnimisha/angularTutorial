@@ -1,0 +1,35 @@
+.boxed {
+    border: 1px solid green ;
+    float:left;
+     background-color:rgb(154, 152, 233);
+      width: 600px; 
+      height: 500px;
+      padding-right: 20px; 
+      margin: 110px;
+      text-align: center;
+  }
+  .boxed p {
+    line-height: 1.5;
+    padding-top: 150px;
+    
+   
+  }
+  .material-icons{
+      align-self: center;
+      padding-top: 90px; 
+  }
+  .msg-icon{
+   /* padding-right: 100px;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    right: 550px;
+    line-height: 14px;
+    bottom: 2px;*/
+
+    position: absolute;
+    width: 40%;
+    bottom: 50px;
+    color: floralwhite;
+    
+  }

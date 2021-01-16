@@ -1,0 +1,29 @@
+.boxed {
+    border: 1px solid green ;
+    float:left;
+     background-color:rgb(154, 152, 233);
+      width: 600px; 
+      height: 500px;
+      padding-right: 20px; 
+      margin: 110px;
+      text-align: center;
+  }
+  .boxed p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 100px; 
+  }
+
+  button {
+    display: block;
+    border: solid white;
+    border-width: 0 10px;
+    
+    
+    color: rgb(24, 22, 22);
+    font-size: 18px;
+    margin: -60px auto 15px;
+    padding: 15px;
+    border-radius: 5px
+   }

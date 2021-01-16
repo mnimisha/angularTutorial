@@ -1,0 +1,56 @@
+
+<section>
+    <div class="example-label"></div>
+    <div class="example-button-row">
+      
+      <button mat-raised-button color="primary" routerLink="/second"> <mat-icon>add</mat-icon>Give Application Feedback</button>
+      <button mat-raised-button color="primary"><mat-icon>add</mat-icon>Give Clinical Feedback</button>
+      <button mat-raised-button color="primary"><mat-icon>add</mat-icon>Give Clinical Feedback</button>
+      
+     
+     <!--- <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a> -->
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  
+
+<h2>Clinician Feedback</h2>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID. </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Clinician </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+  
+    <!-- created date Column -->
+    <ng-container matColumnDef="modifiedDAte">
+      <th mat-header-cell *matHeaderCellDef> Modified Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.modifiedDAte}} </td>
+    </ng-container>
+  
+    <!-- modified date Column -->
+    <ng-container matColumnDef="createdDate">
+      <th mat-header-cell *matHeaderCellDef> Created Date </th>
+      <td mat-cell *matCellDef="let element"> {{element.createdDate}} </td>
+    </ng-container>
+
+    <!-- feedback Column -->
+    <ng-container matColumnDef="feedback">
+        <th mat-header-cell *matHeaderCellDef> Feedback </th>
+        <td mat-cell *matCellDef="let element"><button mat-button color="warn" >Feedback</button>{{element.feedback}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
