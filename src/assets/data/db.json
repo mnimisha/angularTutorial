@@ -1,0 +1,38 @@
+{
+    "posts": [
+      { "id": 1,
+        "name": "HeadPhone", 
+        "catagory_id": 2,
+        "price" :100,
+        "discription" :"write something abt product",
+        "is_available" :true,
+        "rating": 4,
+        "review" : 120,
+        "vendor_name" : "seller_1",
+        "warrenty":2
+     },
+     { "id": 2,
+        "name": "HeadPhone 2", 
+        "catagory_id": 3,
+        "price" :200,
+        "discription" :"write something abt product",
+        "is_available" :true,
+        "rating": 4,
+        "review" : 20,
+        "vendor_name" : "seller_2",
+        "warrenty":1
+     }
+    
+
+    ],
+    "catagories": [
+      { "id": 1, "catagoryName": "polo tshirt" },
+      { "id": 2, "catagoryName": "soccer tshirt" },
+      { "id": 3, "catagoryName": "casual tshirt" }
+    ],
+
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
