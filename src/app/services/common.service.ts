@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 import { url } from 'inspector';*/
 //import {User} from 'firebase';
 import {User} from '@firebase/auth-types';
-import {auth} from 'firebase/app';
+//import {auth} from 'firebase/app';
 import UserCredential = firebase.auth.UserCredential;
 
 @Injectable({

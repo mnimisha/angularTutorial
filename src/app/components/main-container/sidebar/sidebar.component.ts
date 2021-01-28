@@ -41,7 +41,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
     ).subscribe((rooms: RoomData[]) => {
       this.roomData = rooms;
       console.log(this.roomData);
-    }));
+    }));        
 
 
 
@@ -54,7 +54,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subs.map(s => s.unsubscribe());
-  }
+  }  
 
   seedData(ev: string): void {
     this.seedValue.emit(ev);
